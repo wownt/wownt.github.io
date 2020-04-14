@@ -18,7 +18,7 @@ html
 	height: 100%;
 }
 
-div
+#main
 {
 	position: absolute;
 	left: 50%;
@@ -41,14 +41,18 @@ a
 
 .img-wrapper
 {
-position: absolute;
-transform: translateX(500px) translateY(300px);
+	position: -webkit-sticky;
+	position: sticky;
+	height: 100px;
+	width: 100px;
 }
 
 img
 {
 	opacity: 0;
 	visibility: hidden;
+	width: 100px;
+	height:100px;
 }
 
 .img-wrapper:hover img
