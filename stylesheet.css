@@ -1,0 +1,59 @@
+body
+{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		background-image:url("fire.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-top: auto;
+		width: 100%;
+		min-height: 100%;
+		z-index: 1
+}
+
+html
+{
+	height: 100%;
+}
+
+div
+{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	font-family: Arial;
+	color: white;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	font-size: 150%;
+}
+
+a
+{
+	text-decoration: none;
+	mix-blend-mode: difference;
+	color: white;
+}
+
+.img-wrapper
+{
+position: absolute;
+transform: translateX(500px) translateY(300px);
+}
+
+img
+{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.img-wrapper:hover img
+{
+	visibility: visible;
+	transition: 0.5s ease;
+	opacity: 1;
+}
